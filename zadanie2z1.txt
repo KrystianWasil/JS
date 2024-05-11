@@ -1,0 +1,19 @@
+--const
+stała wartość,
+dana z const to dana do której nie mozemy przypisac nic nowego. 
+Gdy pod daną stałą obiekt const mozemy zmienić jego właściwości.
+-- let//var
+vai i let to zmienne, da sie im przypisac nową wartość.
+
+róznice między let/const a var: 
+- Zasięg w przypadku let/const mamy zasięg blokowy od { do },
+natomiast var ma zasięg funkcyjny, czyli jest okreslany przez  ciało funkcji
+- Ponowna deklaracja let i const to uniemozliwia, w przeciwieństwie do var.
+Jezeli chcemy zastosować to w let/const musimy uzyć {}, aby dane swoją ważność.
+
+- Hoisting(windowanie), czyli wynoszenie deklaracji "na początek kodu", na początku kod jest czytnay przez 
+silnik Javascript, a potem jest tworzony specjalny kontekst wykonawczy. W przypadku var odwołanie sie do zmiennej przed jej stworzeniem 
+nie rzuci błedu lecz undefined. Natomiast hosting istnieje równiez przy let/const ale podczasu uzywnia zmiennych ktore nie maja przypisanej wartosci dostaniemy blad.
+- Var globalnie jest częscią obietu window, let nie.
+
+Javascript jest jezykiem typowanym dynamicznie, nie ma konieczności wyraźnego określania typów danych zmiennej przy jej deklatracji. Dzięki temu mozna przypisywać rózne wartości o róznych typach do tej samej zmiennej w trakcie działania programu. Javascript samodzielnie sprawdza jakie typu jest dana wartosc i samodzielnie dokonuje konwersji typów w zalezności od kontekstu.
