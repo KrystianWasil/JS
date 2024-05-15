@@ -4,3 +4,5 @@ function checkPalindrome(str) {
 
 console.log(checkPalindrome('kajak kaja')) // false
 console.log(checkPalindrome('kajak kajak')) // true
+const strr = 'kocham pwio'
+console.log([...strr].reverse().join(''))// true
